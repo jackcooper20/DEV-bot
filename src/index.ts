@@ -64,7 +64,7 @@ async function handleInteractionCommands(
   if (commandName === "ping") {
     await interaction.reply("Pong!");
   }
-  if (commandName === "price") {    
+  else if (commandName === "price") {    
     const tokenData = await fetchTokenPrice("scout-protocol-token");
 
     if (tokenData) {
